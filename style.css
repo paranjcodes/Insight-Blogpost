@@ -1,0 +1,298 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Center-align text */
+    background: url('your-background-image.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+}
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main header styles */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Blurry transparent background */
+    backdrop-filter: blur(10px); /* Blurring effect */
+    font-family: 'Courier New', Courier, monospace; /* Creative font */
+    border-bottom: 2px solid #ddd; /* Light border for separation */
+  }
+  
+  /* Main heading styles */
+  .main-header h1 {
+    font-size: 2rem; /* Adjust as needed */
+    color: #333;
+    font-weight: bold;
+    margin-left: 10%;
+  }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+  width: 10px !important;  /* Force width */
+  height: 5px !important;  /* Force height */
+  object-fit: cover; /* Ensure the image fits the dimensions */
+  margin-right: 10px;
+}
+
+  
+  /* Navigation styles */
+  .nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+  
+  .nav ul {
+    display: flex;
+    gap: 50px; /* Space between links */
+    list-style-type: none;
+  }
+  
+  .nav li {
+    margin: 0;
+  }
+  
+  .nav a {
+    font-size: 1rem; /* Adjust as needed */
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+
+/* General styles for the content section */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 1200px;
+  margin: 20px auto; /* Center the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styles for the media container */
+.media-container {
+  flex: 1; /* Take up space on the left */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between items */
+  align-items: start; /* Align items to the top */
+  margin-right: 20px; /* Space between media and content */
+}
+
+/* Styles for images and videos */
+.media-container img,
+.media-container video {
+  width: 100%; /* Adjust width */
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  object-fit: cover; /* Ensure proper fitting */
+}
+
+/* Styles for the content area */
+.content-area {
+  flex: 2; /* Take up more space on the right */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the h2 heading */
+.content-area h2 {
+  font-family: 'Georgia', serif; /* Creative font for h2 */
+  font-size: 2rem; /* Adjust size as needed */
+  color: #333;
+  text-align: left; /* Align text left */
+  margin-bottom: 20px;
+}
+
+/* Decorative line under h2 */
+.content-area h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007BFF; /* Accent color */
+  margin: 10px 0;
+}
+
+/* Styles for the h1 heading */
+.content-area h1 {
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #222;
+  text-align: left; /* Align text left */
+  margin-bottom: 20px;
+}
+
+/* Styles for paragraphs */
+.content-area p {
+  font-size: 1rem; /* Adjust size as needed */
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Styles for unordered list inside a paragraph */
+.content-area ul {
+  list-style-type: square; /* Different list style */
+  margin-left: 20px;
+}
+
+.content-area li {
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column; /* Stack media and content vertically */
+  }
+
+  .media-container {
+    margin-right: 0; /* Remove margin in vertical layout */
+  }
+}
+
+
+
+button {
+    background-color: #ff6f61; /* Button color */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e55b4f; /* Darker shade on hover */
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55b4f;
+}
+
+
+/* General styling for the content section */
+.content-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Styling for each post block */
+.post {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for the post block */
+.post:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.post h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Content styling */
+.post p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    button, input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+    }
+}

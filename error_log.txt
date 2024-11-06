@@ -1,0 +1,5 @@
+[16-Aug-2024 15:03:17 Europe/Berlin] PHP Warning:  require(E:\xampp\htdocs\your_project_directory\uploads\PHPMailer\Exception.php): Failed to open stream: No such file or directory in E:\xampp\htdocs\insight\process_contact.php on line 13
+[16-Aug-2024 15:03:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'E:\xampp\htdocs\your_project_directory\uploads\PHPMailer\Exception.php' (include_path='E:\xampp\php\PEAR') in E:\xampp\htdocs\insight\process_contact.php:13
+Stack trace:
+#0 {main}
+  thrown in E:\xampp\htdocs\insight\process_contact.php on line 13
